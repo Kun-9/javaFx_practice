@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.javafxtest.HelloController"
+      prefHeight="300.0" prefWidth="520.0" alignment="CENTER">
+    <padding>
+        <Insets left="20" right="20" top="20" bottom="10"/>
+    </padding>
+
+    <TableView fx:id="tableView" prefWidth="360" prefHeight="590">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="이름" prefWidth="120"/>
+            <TableColumn fx:id="koreanColumn" text="국어" prefWidth="120"/>
+            <TableColumn fx:id="mathColumn" text="수학" prefWidth="120"/>
+            <TableColumn fx:id="englishColumn" text="영어" prefWidth="120"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="25" alignment="CENTER">
+        <padding>
+            <Insets top="10"/>
+        </padding>
+        <children>
+            <Button text="추가" fx:id="btnAdd"/>
+            <Button text="차트" fx:id="btnChart"/>
+        </children>
+    </HBox>
+</VBox>
+
+

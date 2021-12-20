@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+
+          prefHeight="220.0" prefWidth="150.0" hgap="10" vgap="10">
+    <padding>
+        <Insets top="20.0" left="20.0" right="20.0" />
+    </padding>
+
+    <children>
+        <Text text="이름" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+
+        <Text text="국어" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="korean" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Text text="수학" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="math" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Text text="영어" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="english" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+        <HBox GridPane.rowIndex="5" GridPane.columnSpan="2" spacing="10" alignment="CENTER">
+            <Button text="저장" fx:id="addBtn"/>
+            <Button text="취소" fx:id="cancelBtn"/>
+        </HBox>
+    </children>
+</GridPane>
+
+<!--        fx:controller="com.example.javafxtest.popupController"-->
+
+
